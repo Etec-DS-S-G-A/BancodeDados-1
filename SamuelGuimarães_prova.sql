@@ -24,13 +24,14 @@ values
 ('HD Externo 1 TB', 'Armazenamento', 349.00 , 10, 'DataPro'),
 ('Headset Gamer', 'Periféricos', 199.90, 15, 'SoundX'),
 ('Webcam HD', 'Periféricos', 159.90, 0, 'VisionMax'),
-('Pendrive', 'Armazenamento', 39.90, 50, 'DataPro'),
+('Pendrive 64GB', 'Armazenamento', 39.90, 50, 'DataPro'),
 ('Cabo HDMI 2m', 'Acessórios', 29.90, 60, 'TechSul');
 
 select count(*) from produto;
 
 -- q3
 select nome, preco from produto
+where categoria like 'p%'
 order by preco desc;
 
 -- q4
